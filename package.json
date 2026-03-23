@@ -1,16 +1,27 @@
 {
-  "name": "mongo-db-migrator",
+  "name": "@khawer.ali/mongo-db-migrator",
   "version": "1.0.0",
-  "description": "Copy specific collection (example: erpTable) Copy full database Remote MongoDB support Local MongoDB support CLI command JSON backup option Works with MongoDB Compass databases",
-  "main": "index.js",
+  "description": "CLI tool to migrate MongoDB databases between servers",
+  "main": "migrate.js",
+  "bin": {
+    "mongo-db-migrator": "./migrate.js"
+  },
+  "keywords": [
+    "mongodb",
+    "migration",
+    "database",
+    "mongo",
+    "backup",
+    "cli",
+    "migrate"
+  ],
+  "author": "Khawer Ali",
+  "license": "ISC",
   "scripts": {
     "migrate": "node migrate.js",
     "dev": "nodemon server/server.js",
     "start": "node server/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^5.2.1",
