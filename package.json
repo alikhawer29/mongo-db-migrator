@@ -4,6 +4,7 @@
   "description": "Copy specific collection (example: erpTable) Copy full database Remote MongoDB support Local MongoDB support CLI command JSON backup option Works with MongoDB Compass databases",
   "main": "index.js",
   "scripts": {
+    "migrate": "node migrate.js",
     "dev": "nodemon server/server.js",
     "start": "node server/server.js"
   },
